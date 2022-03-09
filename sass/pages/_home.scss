@@ -1,0 +1,99 @@
+/*** --- Section Explorer --- ***/
+#explore {
+  .location {
+    box-shadow: inset 0px 10px 5px -11px $colour-contrast;
+    position: relative;
+    background-color: $colour-bg--darken;
+    padding: 15px 0;
+    text-align: center;
+    color: $colour-contrast--darken;
+    font-size: 13px;
+    font-weight: bold;
+
+    i {
+      position: absolute;
+      transform: translate(-25px);
+    }
+  }
+
+  .discovery {
+    padding: 40px 30px;
+    background-color: $colour-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      margin: 0 20px;
+    }
+
+    p {
+      color: $colour-contrast;
+    }
+
+    button {
+      margin: 15px 0;
+    }
+  }
+}
+
+/*** --- Section Fonctionnement --- ***/
+#functioning {
+  padding: 30px 15px 60px 15px;
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .step {
+      margin-left: 10px;
+      box-shadow: 0 5px 5px $colour-bg--darken;
+      border-radius: 17px;
+      background-color: $colour-bg;
+      padding: 20px 0;
+
+      .step-body {
+        transform: translate(-10px);
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-weight: bold;
+
+        .step-number {
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          background-color: $colour-primary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 10px;
+          color: white;
+        }
+
+        p {
+          font-size: 14px;
+          margin: 0;
+        }
+
+        i {
+          color: $colour-contrast;
+        }
+      }
+    }
+  }
+}
+
+/*** --- Section Restaurants --- ***/
+#restaurants {
+  background-color: $colour-bg;
+  padding: 30px 15px 60px 15px;
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

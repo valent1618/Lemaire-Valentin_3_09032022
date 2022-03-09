@@ -1,3 +1,17 @@
+/* - Utils - */
 @import "./utils/variables";
+
+/* - Base - */
 @import "./base/base";
 @import "./base/typography";
+
+/* - Components - */
+@import "./components/button";
+@import "./components/card";
+
+/* - Layouts - */
+@import "./layouts/header";
+@import "./layouts/footer";
+
+/* - Pages - */
+@import "./pages/home.scss";
