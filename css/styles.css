@@ -1,6 +1,6 @@
 /* - Utils - */
 /* - Base - */
-html {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -9,6 +9,31 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  color: #353535;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #353535;
+}
+h4::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -40%;
+  width: 60%;
+  height: 3px;
+  background-color: #99e2d0;
 }
 
 body {
@@ -21,7 +46,7 @@ h1 {
 }
 
 /* - Components - */
-button {
+.button-primary {
   border: none;
   border-radius: 25px;
   background: linear-gradient(0deg, #9356dc, #ff79da);
@@ -29,11 +54,26 @@ button {
   color: white;
 }
 
+.heart {
+  cursor: pointer;
+  font-size: 25px;
+}
+.heart .fa-solid {
+  display: none;
+  color: #9356dc;
+}
+.heart:hover .fa-solid {
+  display: inline;
+}
+.heart:hover .fa-regular {
+  display: none;
+}
+
 .card {
   position: relative;
   box-shadow: 0 5px 5px #eaeaea;
   max-width: 500px;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
 }
 .card a {
@@ -79,18 +119,60 @@ button {
 .card a .card-body p {
   margin: 5px 0;
 }
-.card a .card-body i {
-  cursor: pointer;
-  font-size: 25px;
+.card a .card-body .heart {
+  margin-right: 15px;
 }
-.card a .card-body .fa-solid {
-  display: none;
+
+.product {
+  overflow: hidden;
+  box-shadow: 0 5px 5px #eaeaea;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
-.card a .card-body .fa-regular:hover {
-  display: none;
+.product .product-body {
+  width: 80%;
+  flex-grow: 1;
+  padding: 7px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-.card a .card-body .fa-regular:hover ~ .fa-solid {
-  display: block;
+.product .product-body h3,
+.product .product-body p {
+  margin: 5px 0;
+}
+.product .product-body p {
+  font-size: 14px;
+}
+.product .product-body .product-name {
+  width: 50%;
+  flex-grow: 1;
+}
+.product .product-body .product-name h3,
+.product .product-body .product-name p {
+  overflow: hidden;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product .product-body .product-price {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.product .product-validated {
+  transition: 0.2s ease;
+  width: 0%;
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+.product:hover .product-validated {
+  width: 15%;
 }
 
 /* - Layouts - */
@@ -179,7 +261,7 @@ footer nav a > i {
 #functioning .steps-container .step {
   margin-left: 10px;
   box-shadow: 0 5px 5px #eaeaea;
-  border-radius: 17px;
+  border-radius: 15px;
   background-color: #f6f6f6;
   padding: 20px 0;
 }
@@ -218,6 +300,38 @@ footer nav a > i {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.heading-menu {
+  z-index: -1;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#menu {
+  z-index: 1;
+  transform: translateY(-70px);
+  border-radius: 40px/35px;
+  background-color: #f6f6f6;
+  padding: 30px 15px 60px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#menu h1,
+#menu h4 {
+  margin: 7px;
+}
+#menu h1 .heart,
+#menu h4 .heart {
+  margin-left: 30px;
+}
+#menu .products-container {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,7 +7,9 @@
 
 /* - Components - */
 @import "./components/button";
+@import "./components/heart";
 @import "./components/card";
+@import "./components/product";
 
 /* - Layouts - */
 @import "./layouts/header";
@@ -15,3 +17,4 @@
 
 /* - Pages - */
 @import "./pages/home.scss";
+@import "./pages/menu";

@@ -1,4 +1,4 @@
-html {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -7,4 +7,30 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  color: $colour-contrast--darken;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $colour-contrast--darken;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: -40%;
+    width: 60%;
+    height: 3px;
+    background-color: $colour-tertiary;
+  }
 }
