@@ -1,8 +1,8 @@
 .card {
   position: relative;
-  box-shadow: 0 5px 5px $colour-bg--darken;
+  box-shadow: $box-shadow;
   max-width: 500px;
-  border-radius: 20px;
+  border-radius: $border-radius;
   overflow: hidden;
 
   a {
@@ -52,21 +52,8 @@
         margin: 5px 0;
       }
 
-      i {
-        cursor: pointer;
-        font-size: 25px;
-      }
-
-      .fa-solid {
-        display: none;
-      }
-
-      .fa-regular:hover {
-        display: none;
-
-        ~ .fa-solid {
-          display: block;
-        }
+      .heart {
+        margin-right: 15px;
       }
     }
   }

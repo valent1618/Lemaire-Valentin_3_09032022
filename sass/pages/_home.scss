@@ -40,7 +40,7 @@
 
 /*** --- Section Fonctionnement --- ***/
 #functioning {
-  padding: 30px 15px 60px 15px;
+  padding: $padding-section;
 
   .steps-container {
     display: flex;
@@ -49,8 +49,8 @@
 
     .step {
       margin-left: 10px;
-      box-shadow: 0 5px 5px $colour-bg--darken;
-      border-radius: 17px;
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
       background-color: $colour-bg;
       padding: 20px 0;
 
@@ -89,7 +89,7 @@
 /*** --- Section Restaurants --- ***/
 #restaurants {
   background-color: $colour-bg;
-  padding: 30px 15px 60px 15px;
+  padding: $padding-section;
 
   .cards-container {
     display: flex;
