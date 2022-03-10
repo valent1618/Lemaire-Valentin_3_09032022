@@ -1,0 +1,19 @@
+.heart {
+  cursor: pointer;
+  font-size: 25px;
+
+  .fa-solid {
+    display: none;
+    color: $colour-primary;
+  }
+
+  &:hover {
+    .fa-solid {
+      display: inline;
+    }
+
+    .fa-regular {
+      display: none;
+    }
+  }
+}
