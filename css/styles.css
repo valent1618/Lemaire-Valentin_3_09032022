@@ -55,18 +55,27 @@ h1 {
 }
 
 .heart {
+  position: relative;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
   font-size: 25px;
 }
+.heart i {
+  transition: 0.4s ease;
+  position: absolute;
+}
 .heart .fa-solid {
-  display: none;
+  transform: scale(0);
+  opacity: 0;
   color: #9356dc;
 }
 .heart:hover .fa-solid {
-  display: inline;
+  transform: scale(1);
+  opacity: 1;
 }
 .heart:hover .fa-regular {
-  display: none;
+  color: #9356dc;
 }
 
 .card {
@@ -162,17 +171,26 @@ h1 {
   font-weight: bold;
 }
 .product .product-validated {
-  transition: 0.2s ease;
+  transition: 0.4s ease;
   width: 0%;
   background-color: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 22px;
+  font-size: 24px;
+}
+.product .product-validated i {
+  transition: 0.4s ease;
+  transition-delay: 0.5s;
+  transform: rotate(70deg);
 }
 .product:hover .product-validated {
-  width: 15%;
+  width: 60px;
+}
+.product:hover .product-validated i {
+  transition-delay: 0s;
+  transform: rotate(360deg);
 }
 
 /* - Layouts - */

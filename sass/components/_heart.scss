@@ -1,19 +1,29 @@
 .heart {
+  position: relative;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
   font-size: 25px;
 
+  i {
+    transition: 0.4s ease;
+    position: absolute;
+  }
+
   .fa-solid {
-    display: none;
+    transform: scale(0);
+    opacity: 0;
     color: $colour-primary;
   }
 
   &:hover {
     .fa-solid {
-      display: inline;
+      transform: scale(1);
+      opacity: 1;
     }
 
     .fa-regular {
-      display: none;
+      color: $colour-primary;
     }
   }
 }

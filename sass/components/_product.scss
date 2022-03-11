@@ -43,19 +43,30 @@
   }
 
   .product-validated {
-    transition: 0.2s ease;
+    transition: 0.4s ease;
     width: 0%;
     background-color: $colour-tertiary;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 22px;
+    font-size: 24px;
+
+    i {
+      transition: 0.4s ease;
+      transition-delay: 0.5s;
+      transform: rotate(70deg);
+    }
   }
 
   &:hover {
     .product-validated {
-      width: 15%;
+      width: 60px;
+
+      i {
+        transition-delay: 0s;
+        transform: rotate(360deg);
+      }
     }
   }
 }
