@@ -1,7 +1,14 @@
 .button-primary {
+  cursor: pointer;
+  box-shadow: 0 5px 8px #cfcfcf;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(0deg, $colour-primary, $colour-secondary);
+  background: linear-gradient(-7deg, $colour-primary, $colour-secondary);
   padding: 15px 20px;
   color: white;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0 5px 8px 3px #cfcfcf;
+  }
 }

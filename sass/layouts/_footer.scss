@@ -20,5 +20,10 @@ footer {
       width: 20px;
       margin-right: 10px;
     }
+
+    a:hover,
+    a:hover i {
+      color: $colour-tertiary;
+    }
   }
 }

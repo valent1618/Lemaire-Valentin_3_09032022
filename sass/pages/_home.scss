@@ -1,18 +1,28 @@
 /*** --- Section Explorer --- ***/
 #explore {
   .location {
+    cursor: pointer;
     box-shadow: inset 0px 10px 5px -11px $colour-contrast;
     position: relative;
     background-color: $colour-bg--darken;
     padding: 15px 0;
     text-align: center;
     color: $colour-contrast--darken;
-    font-size: 13px;
+    font-size: $small-size;
     font-weight: bold;
 
     i {
       position: absolute;
       transform: translate(-25px);
+    }
+
+    &:hover a {
+      color: $colour-primary;
+
+      i {
+        transform: translate(-25px) scale(1.2);
+        color: $colour-primary;
+      }
     }
   }
 
@@ -55,31 +65,42 @@
       padding: 20px 0;
 
       .step-body {
-        transform: translate(-10px);
+        transform: translate(-12px);
         display: flex;
         align-items: center;
         gap: 25px;
-        font-weight: bold;
 
         .step-number {
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
           background-color: $colour-primary;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 10px;
           color: white;
+          font-weight: normal;
         }
 
         p {
-          font-size: 14px;
           margin: 0;
+          font-weight: bold;
+          font-size: $small-size;
         }
 
         i {
+          font-size: 18px;
           color: $colour-contrast;
+        }
+      }
+
+      &:hover {
+        box-shadow: $box-shadow--hover;
+        background-color: $colour-bg--primary-light;
+
+        i {
+          color: $colour-primary;
+          transform: scale(1.1);
         }
       }
     }
@@ -93,7 +114,8 @@
 
   .cards-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
 }

@@ -19,7 +19,7 @@
       margin: 0;
       border-radius: 2px;
       background-color: $colour-tertiary;
-      padding: 5px 7px;
+      padding: 7px 10px;
       color: $colour-quaternary;
       font-size: 12px;
       font-weight: bold;
@@ -56,5 +56,9 @@
         margin-right: 15px;
       }
     }
+  }
+
+  &:hover {
+    box-shadow: $box-shadow--hover;
   }
 }

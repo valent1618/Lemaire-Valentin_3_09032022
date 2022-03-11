@@ -5,8 +5,12 @@
   height: 25px;
   font-size: 25px;
 
+  input {
+    display: none;
+  }
+
   i {
-    transition: 0.4s ease;
+    transition: $transition-long;
     position: absolute;
   }
 
@@ -16,7 +20,7 @@
     color: $colour-primary;
   }
 
-  &:hover {
+  input:checked ~ label {
     .fa-solid {
       transform: scale(1);
       opacity: 1;

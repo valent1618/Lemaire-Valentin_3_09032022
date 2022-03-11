@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  transition: 0.2s ease;
 }
 
 a {
@@ -47,11 +48,17 @@ h1 {
 
 /* - Components - */
 .button-primary {
+  cursor: pointer;
+  box-shadow: 0 5px 8px #cfcfcf;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(-7deg, #9356dc, #ff79da);
   padding: 15px 20px;
   color: white;
+}
+.button-primary:hover {
+  opacity: 0.8;
+  box-shadow: 0 5px 8px 3px #cfcfcf;
 }
 
 .heart {
@@ -60,6 +67,9 @@ h1 {
   width: 25px;
   height: 25px;
   font-size: 25px;
+}
+.heart input {
+  display: none;
 }
 .heart i {
   transition: 0.4s ease;
@@ -70,17 +80,17 @@ h1 {
   opacity: 0;
   color: #9356dc;
 }
-.heart:hover .fa-solid {
+.heart input:checked ~ label .fa-solid {
   transform: scale(1);
   opacity: 1;
 }
-.heart:hover .fa-regular {
+.heart input:checked ~ label .fa-regular {
   color: #9356dc;
 }
 
 .card {
   position: relative;
-  box-shadow: 0 5px 5px #eaeaea;
+  box-shadow: 0 5px 8px #e7e7e7;
   max-width: 500px;
   border-radius: 15px;
   overflow: hidden;
@@ -99,7 +109,7 @@ h1 {
   margin: 0;
   border-radius: 2px;
   background-color: #99e2d0;
-  padding: 5px 7px;
+  padding: 7px 10px;
   color: #008766;
   font-size: 12px;
   font-weight: bold;
@@ -131,16 +141,24 @@ h1 {
 .card a .card-body .heart {
   margin-right: 15px;
 }
+.card:hover {
+  box-shadow: 0 5px 8px 3px #e7e7e7;
+}
 
 .product {
   overflow: hidden;
-  box-shadow: 0 5px 5px #eaeaea;
+  box-shadow: 0 5px 8px #e7e7e7;
   border-radius: 15px;
   background-color: white;
+}
+.product input {
+  display: none;
+}
+.product .label-product {
   display: flex;
   justify-content: space-between;
 }
-.product .product-body {
+.product .label-product .product-body {
   width: 80%;
   flex-grow: 1;
   padding: 7px 12px;
@@ -148,29 +166,29 @@ h1 {
   justify-content: space-between;
   align-items: flex-end;
 }
-.product .product-body h3,
-.product .product-body p {
+.product .label-product .product-body h3,
+.product .label-product .product-body p {
   margin: 5px 0;
 }
-.product .product-body p {
+.product .label-product .product-body p {
   font-size: 14px;
 }
-.product .product-body .product-name {
+.product .label-product .product-body .product-name {
   width: 50%;
   flex-grow: 1;
 }
-.product .product-body .product-name h3,
-.product .product-body .product-name p {
+.product .label-product .product-body .product-name h3,
+.product .label-product .product-body .product-name p {
   overflow: hidden;
   padding-right: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.product .product-body .product-price {
+.product .label-product .product-body .product-price {
   margin-right: 10px;
   font-weight: bold;
 }
-.product .product-validated {
+.product .label-product .product-validated {
   transition: 0.4s ease;
   width: 0%;
   background-color: #99e2d0;
@@ -180,15 +198,15 @@ h1 {
   color: white;
   font-size: 24px;
 }
-.product .product-validated i {
+.product .label-product .product-validated i {
   transition: 0.4s ease;
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
   transform: rotate(70deg);
 }
-.product:hover .product-validated {
+.product input:checked ~ label .product-validated {
   width: 60px;
 }
-.product:hover .product-validated i {
+.product input:checked ~ label .product-validated i {
   transition-delay: 0s;
   transform: rotate(360deg);
 }
@@ -232,22 +250,34 @@ footer nav a > i {
   width: 20px;
   margin-right: 10px;
 }
+footer nav a:hover,
+footer nav a:hover i {
+  color: #99e2d0;
+}
 
 /* - Pages - */
 /*** --- Section Explorer --- ***/
 #explore .location {
+  cursor: pointer;
   box-shadow: inset 0px 10px 5px -11px #7e7e7e;
   position: relative;
   background-color: #eaeaea;
   padding: 15px 0;
   text-align: center;
   color: #353535;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
 }
 #explore .location i {
   position: absolute;
   transform: translate(-25px);
+}
+#explore .location:hover a {
+  color: #9356dc;
+}
+#explore .location:hover a i {
+  transform: translate(-25px) scale(1.2);
+  color: #9356dc;
 }
 #explore .discovery {
   padding: 40px 30px;
@@ -278,35 +308,44 @@ footer nav a > i {
 }
 #functioning .steps-container .step {
   margin-left: 10px;
-  box-shadow: 0 5px 5px #eaeaea;
+  box-shadow: 0 5px 8px #e7e7e7;
   border-radius: 15px;
   background-color: #f6f6f6;
   padding: 20px 0;
 }
 #functioning .steps-container .step .step-body {
-  transform: translate(-10px);
+  transform: translate(-12px);
   display: flex;
   align-items: center;
   gap: 25px;
-  font-weight: bold;
 }
 #functioning .steps-container .step .step-body .step-number {
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   background-color: #9356dc;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
   color: white;
+  font-weight: normal;
 }
 #functioning .steps-container .step .step-body p {
-  font-size: 14px;
   margin: 0;
+  font-weight: bold;
+  font-size: 14px;
 }
 #functioning .steps-container .step .step-body i {
+  font-size: 18px;
   color: #7e7e7e;
+}
+#functioning .steps-container .step:hover {
+  box-shadow: 0 5px 8px 3px #e7e7e7;
+  background-color: #f5edff;
+}
+#functioning .steps-container .step:hover i {
+  color: #9356dc;
+  transform: scale(1.1);
 }
 
 /*** --- Section Restaurants --- ***/
@@ -316,40 +355,47 @@ footer nav a > i {
 }
 #restaurants .cards-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-.heading-menu {
+.heading-img-menu {
+  position: relative;
   z-index: -1;
-  height: 300px;
+  height: 225px;
+}
+.heading-img-menu img {
   width: 100%;
+  height: 280px;
   object-fit: cover;
 }
 
-#menu {
-  z-index: 1;
-  transform: translateY(-70px);
-  border-radius: 40px/35px;
+.menu {
+  border-radius: 40px 40px/35px 35px 0 0;
   background-color: #f6f6f6;
   padding: 30px 15px 60px 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
-#menu h1,
-#menu h4 {
+.menu h1,
+.menu h4 {
   margin: 7px;
 }
-#menu h1 .heart,
-#menu h4 .heart {
+.menu h1 .heart,
+.menu h4 .heart {
   margin-left: 30px;
 }
-#menu .products-container {
+.menu .products-container {
   margin: 15px 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.menu .button-primary {
+  align-self: center;
+  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

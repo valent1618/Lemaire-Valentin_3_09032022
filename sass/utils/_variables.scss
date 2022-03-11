@@ -6,9 +6,15 @@ $colour-contrast: #7e7e7e;
 $colour-contrast--darken: #353535;
 $colour-bg: #f6f6f6;
 $colour-bg--darken: #eaeaea;
+$colour-bg--primary-light: #f5edff;
+
+$transition-long: 0.4s ease;
+
+$small-size: 14px;
 
 $padding-section: 30px 15px 60px 15px;
 
-$box-shadow: 0 5px 5px $colour-bg--darken;
+$box-shadow: 0 5px 8px #e7e7e7;
+$box-shadow--hover: 0 5px 8px 3px #e7e7e7;
 
 $border-radius: 15px;
