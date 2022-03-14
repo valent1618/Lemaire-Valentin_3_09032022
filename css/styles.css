@@ -91,6 +91,7 @@ h1 {
 }
 
 .card {
+  cursor: pointer;
   position: relative;
   box-shadow: 0 5px 5px #eaeaea;
   max-width: 500px;
@@ -148,6 +149,7 @@ h1 {
 }
 
 .product {
+  cursor: pointer;
   overflow: hidden;
   box-shadow: 0 5px 5px #eaeaea;
   border-radius: 15px;
