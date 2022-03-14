@@ -160,7 +160,6 @@ h1 {
   overflow: hidden;
 }
 .card a {
-  cursor: default;
   height: 250px;
   background-color: white;
   display: flex;
@@ -222,7 +221,6 @@ h1 {
   }
 }
 .product {
-  cursor: pointer;
   overflow: hidden;
   box-shadow: 0 5px 5px #eaeaea;
   border-radius: 15px;
@@ -232,6 +230,7 @@ h1 {
   display: none;
 }
 .product .label-product {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
