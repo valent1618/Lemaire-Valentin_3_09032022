@@ -33,11 +33,11 @@
       .product-name {
         width: 50%;
         flex-grow: 1;
+        margin-right: 25px;
 
         h3,
         p {
           overflow: hidden;
-          padding-right: 10px;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
