@@ -1,0 +1,73 @@
+@keyframes disappear {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+    display: none;
+  }
+}
+
+@keyframes appear {
+  from {
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 270px;
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loader-container {
+  display: none;
+  z-index: 5;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, $colour-primary, $colour-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  color: white;
+  animation: disappear 0.4s 2.5s forwards ease;
+
+  h1 {
+    overflow: hidden;
+    width: 270px;
+    text-align: center;
+    font-size: 3em;
+    animation: appear 1s ease;
+  }
+
+  .loader {
+    opacity: 0;
+    padding: 30px;
+    border: 20px double white;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: opacity 2s 0.5s forwards ease, rotate 1s infinite linear;
+    height: 0;
+    width: 0;
+  }
+}
