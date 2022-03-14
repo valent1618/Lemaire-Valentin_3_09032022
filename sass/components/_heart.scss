@@ -11,28 +11,31 @@
   i {
     transition: $transition-long;
     position: absolute;
+    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 
   .fa-solid {
     transform: scale(0);
     opacity: 0;
-    color: $colour-primary;
+    color: transparent;
   }
 
   input:checked ~ label {
+    .fa-regular {
+      color: transparent;
+    }
+
     .fa-solid {
       transform: scale(1);
       opacity: 1;
-    }
-
-    .fa-regular {
-      color: $colour-primary;
     }
   }
 
   &:hover {
     .fa-regular {
-      color: $colour-primary;
+      color: transparent;
     }
   }
 }
