@@ -1,0 +1,51 @@
+/*** --- Loader --- ***/
+@keyframes loader-disappear {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+    display: none;
+  }
+}
+
+@keyframes title-appear {
+  from {
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 270px;
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*** --- Product --- ***/
+@keyframes product-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

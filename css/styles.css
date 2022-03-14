@@ -57,6 +57,53 @@ h1 {
   font-weight: normal;
 }
 
+/*** --- Loader --- ***/
+@keyframes loader-disappear {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+    display: none;
+  }
+}
+@keyframes title-appear {
+  from {
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 270px;
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*** --- Product --- ***/
+@keyframes product-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* - Components - */
 .button-primary {
   cursor: pointer;
@@ -82,23 +129,26 @@ h1 {
   display: none;
 }
 .heart i {
-  transition: 0.4s ease;
+  transition: 0.4s;
   position: absolute;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .heart .fa-solid {
   transform: scale(0);
   opacity: 0;
-  color: #9356dc;
+  color: transparent;
+}
+.heart input:checked ~ label .fa-regular {
+  color: transparent;
 }
 .heart input:checked ~ label .fa-solid {
   transform: scale(1);
   opacity: 1;
 }
-.heart input:checked ~ label .fa-regular {
-  color: #9356dc;
-}
 .heart:hover .fa-regular {
-  color: #9356dc;
+  color: transparent;
 }
 
 .card {
@@ -138,9 +188,13 @@ h1 {
   align-items: center;
 }
 .card a .card-img img {
+  object-position: bottom;
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.card a .portrait-img > img {
+  object-position: 100% 61%;
 }
 .card a .card-body {
   padding: 15px;
@@ -150,7 +204,7 @@ h1 {
 }
 .card a .card-body h3,
 .card a .card-body p {
-  margin: 5px 0;
+  margin: 2px 0;
 }
 .card a .card-body .heart {
   margin-right: 15px;
@@ -199,11 +253,11 @@ h1 {
 .product .label-product .product-body .product-name {
   width: 50%;
   flex-grow: 1;
+  margin-right: 25px;
 }
 .product .label-product .product-body .product-name h3,
 .product .label-product .product-body .product-name p {
   overflow: hidden;
-  padding-right: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -212,7 +266,7 @@ h1 {
   font-weight: bold;
 }
 .product .label-product .product-validated {
-  transition: 0.4s ease;
+  transition: 0.4s;
   width: 0%;
   background-color: #99e2d0;
   display: flex;
@@ -222,7 +276,7 @@ h1 {
   font-size: 24px;
 }
 .product .label-product .product-validated i {
-  transition: 0.4s ease;
+  transition: 0.4s;
   transition-delay: 0.4s;
   transform: rotate(70deg);
 }
@@ -238,6 +292,39 @@ h1 {
 }
 
 /* - Layouts - */
+.loader-container {
+  display: none;
+  z-index: 5;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  color: white;
+  animation: loader-disappear 0.4s 2.5s forwards ease;
+}
+.loader-container h1 {
+  overflow: hidden;
+  width: 270px;
+  text-align: center;
+  font-size: 3em;
+  animation: title-appear 1s ease;
+}
+.loader-container .loader {
+  opacity: 0;
+  padding: 30px;
+  border: 20px double white;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: opacity 2s 0.4s forwards ease, rotate 1s infinite linear;
+  height: 0;
+  width: 0;
+}
+
 header {
   padding: 20px 20px 10px 20px;
   display: flex;
@@ -417,6 +504,18 @@ footer nav a:hover i {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.menu .products-container .product {
+  opacity: 0;
+}
+.menu .products-container > .product:first-child {
+  animation: product-appear forwards 1s 0.5s;
+}
+.menu .products-container > .product:first-child + .product {
+  animation: product-appear forwards 1s 0.6s;
+}
+.menu .products-container > .product:first-child + .product + .product {
+  animation: product-appear forwards 1s 0.7s;
 }
 .menu .button-primary {
   align-self: center;
