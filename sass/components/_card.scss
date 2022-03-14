@@ -36,10 +36,15 @@
       align-items: center;
 
       img {
+        object-position: bottom;
         object-fit: cover;
         width: 100%;
         height: 100%;
       }
+    }
+
+    .portrait-img > img {
+      object-position: 100% 61%;
     }
 
     .card-body {
@@ -50,7 +55,7 @@
 
       h3,
       p {
-        margin: 5px 0;
+        margin: 2px 0;
       }
 
       .heart {
