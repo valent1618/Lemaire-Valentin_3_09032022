@@ -49,7 +49,7 @@ h1 {
 /* - Components - */
 .button-primary {
   cursor: pointer;
-  box-shadow: 0 5px 8px #cfcfcf;
+  box-shadow: 0 2px 5px #7e7e7e;
   border: none;
   border-radius: 25px;
   background: linear-gradient(-7deg, #9356dc, #ff79da);
@@ -58,12 +58,11 @@ h1 {
 }
 .button-primary:hover {
   opacity: 0.8;
-  box-shadow: 0 5px 8px 3px #cfcfcf;
+  box-shadow: 0 3px 8px #7e7e7e;
 }
 
 .heart {
   position: relative;
-  cursor: pointer;
   width: 25px;
   height: 25px;
   font-size: 25px;
@@ -87,10 +86,13 @@ h1 {
 .heart input:checked ~ label .fa-regular {
   color: #9356dc;
 }
+.heart:hover .fa-regular {
+  color: #9356dc;
+}
 
 .card {
   position: relative;
-  box-shadow: 0 5px 8px #e7e7e7;
+  box-shadow: 0 5px 5px #eaeaea;
   max-width: 500px;
   border-radius: 15px;
   overflow: hidden;
@@ -142,12 +144,12 @@ h1 {
   margin-right: 15px;
 }
 .card:hover {
-  box-shadow: 0 5px 8px 3px #e7e7e7;
+  box-shadow: 0 20px 20px #eaeaea;
 }
 
 .product {
   overflow: hidden;
-  box-shadow: 0 5px 8px #e7e7e7;
+  box-shadow: 0 5px 5px #eaeaea;
   border-radius: 15px;
   background-color: white;
 }
@@ -209,6 +211,9 @@ h1 {
 .product input:checked ~ label .product-validated i {
   transition-delay: 0s;
   transform: rotate(360deg);
+}
+.product:hover {
+  box-shadow: 0 20px 20px #eaeaea;
 }
 
 /* - Layouts - */
@@ -308,7 +313,7 @@ footer nav a:hover i {
 }
 #functioning .steps-container .step {
   margin-left: 10px;
-  box-shadow: 0 5px 8px #e7e7e7;
+  box-shadow: 0 5px 5px #eaeaea;
   border-radius: 15px;
   background-color: #f6f6f6;
   padding: 20px 0;
@@ -340,7 +345,7 @@ footer nav a:hover i {
   color: #7e7e7e;
 }
 #functioning .steps-container .step:hover {
-  box-shadow: 0 5px 8px 3px #e7e7e7;
+  box-shadow: 0 20px 20px #eaeaea;
   background-color: #f5edff;
 }
 #functioning .steps-container .step:hover i {

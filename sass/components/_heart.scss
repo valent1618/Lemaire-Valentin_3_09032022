@@ -1,6 +1,5 @@
 .heart {
   position: relative;
-  cursor: pointer;
   width: 25px;
   height: 25px;
   font-size: 25px;
@@ -26,6 +25,12 @@
       opacity: 1;
     }
 
+    .fa-regular {
+      color: $colour-primary;
+    }
+  }
+
+  &:hover {
     .fa-regular {
       color: $colour-primary;
     }

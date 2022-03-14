@@ -1,6 +1,6 @@
 .button-primary {
   cursor: pointer;
-  box-shadow: 0 5px 8px #cfcfcf;
+  box-shadow: 0 2px 5px $colour-contrast;
   border: none;
   border-radius: 25px;
   background: linear-gradient(-7deg, $colour-primary, $colour-secondary);
@@ -9,6 +9,6 @@
 
   &:hover {
     opacity: 0.8;
-    box-shadow: 0 5px 8px 3px #cfcfcf;
+    box-shadow: 0 3px 8px $colour-contrast;
   }
 }

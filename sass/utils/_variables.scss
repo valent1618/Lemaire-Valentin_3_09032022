@@ -14,7 +14,7 @@ $small-size: 14px;
 
 $padding-section: 30px 15px 60px 15px;
 
-$box-shadow: 0 5px 8px #e7e7e7;
-$box-shadow--hover: 0 5px 8px 3px #e7e7e7;
+$box-shadow: 0 5px 5px $colour-bg--darken;
+$box-shadow--hover: 0 20px 20px $colour-bg--darken;
 
 $border-radius: 15px;
