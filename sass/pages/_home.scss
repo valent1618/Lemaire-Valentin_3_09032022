@@ -55,7 +55,7 @@
   .steps-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--gap);
 
     .step {
       margin-left: 10px;
@@ -68,7 +68,7 @@
         transform: translate(-12px);
         display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 24px;
 
         .step-number {
           width: 24px;
@@ -114,8 +114,7 @@
 
   .cards-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: var(--gap);
   }
 }

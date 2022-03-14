@@ -1,9 +1,9 @@
 footer {
   background-color: $colour-contrast--darken;
-  padding: 25px 25px 50px 25px;
+  padding: 25px $padding-side 50px $padding-side;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--gap);
   color: white;
 
   h1 {

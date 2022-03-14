@@ -12,9 +12,22 @@ $transition-long: 0.4s ease;
 
 $small-size: 14px;
 
-$padding-section: 30px 15px 60px 15px;
-
 $box-shadow: 0 5px 5px $colour-bg--darken;
 $box-shadow--hover: 0 20px 20px $colour-bg--darken;
 
 $border-radius: 15px;
+
+$padding-side: 5vw;
+$padding-section: 30px $padding-side 60px $padding-side;
+
+:root {
+  --gap: 20px;
+}
+
+/*******************************************************************************************/
+/***** ----- Tablet / Desktop ----- *****/
+@media screen and (min-width: 768px) {
+  :root {
+    --gap: 30px;
+  }
+}

@@ -2,7 +2,7 @@
   cursor: pointer;
   position: relative;
   box-shadow: $box-shadow;
-  max-width: 500px;
+  flex-basis: 100%;
   border-radius: $border-radius;
   overflow: hidden;
 
@@ -61,5 +61,14 @@
 
   &:hover {
     box-shadow: $box-shadow--hover;
+  }
+}
+
+/*******************************************************************************************/
+/***** ----- Tablet ----- *****/
+@media screen and (min-width: 768px) {
+  .card {
+    flex-basis: calc(50% - (var(--gap) / 2));
+    max-width: 400px;
   }
 }

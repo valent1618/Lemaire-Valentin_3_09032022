@@ -1,4 +1,15 @@
 /* - Utils - */
+:root {
+  --gap: 20px;
+}
+
+/*******************************************************************************************/
+/***** ----- Tablet / Desktop ----- *****/
+@media screen and (min-width: 768px) {
+  :root {
+    --gap: 30px;
+  }
+}
 /* - Base - */
 * {
   -webkit-box-sizing: border-box;
@@ -94,7 +105,7 @@ h1 {
   cursor: pointer;
   position: relative;
   box-shadow: 0 5px 5px #eaeaea;
-  max-width: 500px;
+  flex-basis: 100%;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -148,6 +159,14 @@ h1 {
   box-shadow: 0 20px 20px #eaeaea;
 }
 
+/*******************************************************************************************/
+/***** ----- Tablet ----- *****/
+@media screen and (min-width: 768px) {
+  .card {
+    flex-basis: calc(50% - var(--gap) / 2);
+    max-width: 400px;
+  }
+}
 .product {
   cursor: pointer;
   overflow: hidden;
@@ -238,10 +257,10 @@ header h1 {
 
 footer {
   background-color: #353535;
-  padding: 25px 25px 50px 25px;
+  padding: 25px 5vw 50px 5vw;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--gap);
   color: white;
 }
 footer h1 {
@@ -306,12 +325,12 @@ footer nav a:hover i {
 
 /*** --- Section Fonctionnement --- ***/
 #functioning {
-  padding: 30px 15px 60px 15px;
+  padding: 30px 5vw 60px 5vw;
 }
 #functioning .steps-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--gap);
 }
 #functioning .steps-container .step {
   margin-left: 10px;
@@ -324,7 +343,7 @@ footer nav a:hover i {
   transform: translate(-12px);
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 24px;
 }
 #functioning .steps-container .step .step-body .step-number {
   width: 24px;
@@ -358,13 +377,12 @@ footer nav a:hover i {
 /*** --- Section Restaurants --- ***/
 #restaurants {
   background-color: #f6f6f6;
-  padding: 30px 15px 60px 15px;
+  padding: 30px 5vw 60px 5vw;
 }
 #restaurants .cards-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: var(--gap);
 }
 
 .heading-img-menu {
@@ -381,7 +399,7 @@ footer nav a:hover i {
 .menu {
   border-radius: 40px 40px/35px 35px 0 0;
   background-color: #f6f6f6;
-  padding: 30px 15px 60px 15px;
+  padding: 30px 5vw 60px 5vw;
   display: flex;
   flex-direction: column;
   gap: 25px;
