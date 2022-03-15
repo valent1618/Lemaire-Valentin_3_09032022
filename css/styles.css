@@ -516,6 +516,9 @@ footer nav a:hover i {
 .menu .products-container > .product:first-child + .product + .product {
   animation: product-appear forwards 1s 0.7s;
 }
+.menu .products-container > .product:first-child + .product + .product + .product {
+  animation: product-appear forwards 1s 0.8s;
+}
 .menu .button-primary {
   align-self: center;
   width: 50%;
