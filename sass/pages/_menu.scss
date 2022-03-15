@@ -45,6 +45,10 @@
 
         & + .product {
           animation: product-appear forwards $transition-product 0.7s;
+
+          & + .product {
+            animation: product-appear forwards $transition-product 0.8s;
+          }
         }
       }
     }
