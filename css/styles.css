@@ -198,7 +198,7 @@ h1 {
   width: 100%;
   height: 100%;
 }
-.card a .portrait-img > img {
+.card a .card-img .portrait-img {
   object-position: 100% 61%;
 }
 .card a .card-body {
@@ -213,6 +213,11 @@ h1 {
 }
 .card a .card-body .heart {
   margin-right: 15px;
+}
+.card .heart {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
 }
 .card:hover {
   box-shadow: 0 20px 20px #eaeaea;
