@@ -16,15 +16,21 @@
   padding: $padding-section;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: var(--gap);
 
-  h1,
-  h4 {
-    margin: 7px;
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .heart {
-      margin-left: 30px;
+      margin-right: 10px;
     }
+  }
+
+  h2,
+  h4 {
+    margin: 7px;
   }
 
   .products-container {
