@@ -1,181 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>ohmyfood - menu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://kit.fontawesome.com/75243ac523.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/75243ac523.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <h1>ohmyfood</h1>
+      <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      <h1>ohmyfood</h1>
     </header>
     <main>
-        <div class="heading-img-menu">
-            <img src="../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant - Le délice des sens" class="heading-menu" />
-        </div>
-        <section class="menu">
-            <h2>Le délice des sens
-                <span class="heart">
-                    <input type="checkbox" id="fav-le-delice-des-sens"/>
-                    <label for="fav-le-delice-des-sens">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </label>
+      <div class="heading-img-menu">
+        <img
+          src="../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+          alt="Restaurant - Le délice des sens"
+          class="heading-menu"
+        />
+      </div>
+      <section class="menu">
+        <h2>
+          Le délice des sens
+          <span class="heart">
+            <input type="checkbox" id="fav-le-delice-des-sens" />
+            <label for="fav-le-delice-des-sens">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </label>
+          </span>
+        </h2>
+        <!-- Section Entrées -->
+        <section>
+          <h4>Entrées</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-tartare-de-thon" />
+              <label class="label-product" for="add-tartare-de-thon">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Tartare de thon</span>
+                    <span class="product-subtitle">Assaisonné au yuzu</span>
+                  </span>
+                  <span class="product-price">25€</span>
                 </span>
-            </h2>
-            <!-- Section Entrées -->
-            <section>
-                <h4>Entrées</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-tartare-de-thon"/>
-                        <label class="label-product" for="add-tartare-de-thon">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Tartare de thon</span>
-                                    <span class="product-subtitle">Assaisonné au yuzu</span>
-                                </span>
-                                <span class="product-price">25€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-bouchee-de-homard-croustillant"/>
-                        <label class="label-product" for="add-bouchee-de-homard-croustillant">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Bouchée de homard croustillant</span>
-                                    <span class="product-subtitle">Et sa farandole de petits légumes</span>
-                                </span>
-                                <span class="product-price">35€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-veloute-de-cepes"/>
-                        <label class="label-product" for="add-veloute-de-cepes">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Velouté de cèpes</span>
-                                    <span class="product-subtitle">Aux truffes</span>
-                                </span>
-                                <span class="product-price">20€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Plats -->
-            <section>
-                <h4>Plats</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-poulet-roti-aux-herbes-de-provence"/>
-                        <label class="label-product" for="add-poulet-roti-aux-herbes-de-provence">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Poulet rôti aux herbes de Provence</span>
-                                    <span class="product-subtitle">Et sa crème de truffe</span>
-                                </span>
-                                <span class="product-price">40€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-langouste-rotie"/>
-                        <label class="label-product" for="add-langouste-rotie">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Langouste rôtie</span>
-                                    <span class="product-subtitle">Et ses légumes de saison</span>
-                                </span>
-                                <span class="product-price">35€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-cote-de-boeuf-angus"/>
-                        <label class="label-product" for="add-cote-de-boeuf-angus">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Côte de boeuf Angus</span>
-                                    <span class="product-subtitle">Et sa purée de panais</span>
-                                </span>
-                                <span class="product-price">44€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Desserts -->
-            <section>
-                <h4>Desserts</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-farandole-de-desserts"/>
-                        <label class="label-product" for="add-farandole-de-desserts">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Farandole de desserts</span>
-                                    <span class="product-subtitle">Du chef</span>
-                                </span>
-                                <span class="product-price">18€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-creme-brulee"/>
-                        <label class="label-product" for="add-creme-brulee">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Crème brulée</span>
-                                    <span class="product-subtitle">Revisitée</span>
-                                </span>
-                                <span class="product-price">22€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-Tiramisu"/>
-                        <label class="label-product" for="add-Tiramisu">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Tiramisu</span>
-                                    <span class="product-subtitle">À la noisette</span>
-                                </span>
-                                <span class="product-price">23€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <button type="button" name="order" class="button-primary">Commander</button>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-bouchee-de-homard-croustillant" />
+              <label
+                class="label-product"
+                for="add-bouchee-de-homard-croustillant"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Bouchée de homard croustillant</span
+                    >
+                    <span class="product-subtitle"
+                      >Et sa farandole de petits légumes</span
+                    >
+                  </span>
+                  <span class="product-price">35€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-veloute-de-cepes" />
+              <label class="label-product" for="add-veloute-de-cepes">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Velouté de cèpes</span>
+                    <span class="product-subtitle">Aux truffes</span>
+                  </span>
+                  <span class="product-price">20€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
         </section>
+        <!-- Section Plats -->
+        <section>
+          <h4>Plats</h4>
+          <div class="products-container">
+            <div class="product">
+              <input
+                type="checkbox"
+                id="add-poulet-roti-aux-herbes-de-provence"
+              />
+              <label
+                class="label-product"
+                for="add-poulet-roti-aux-herbes-de-provence"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Poulet rôti aux herbes de Provence</span
+                    >
+                    <span class="product-subtitle">Et sa crème de truffe</span>
+                  </span>
+                  <span class="product-price">40€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-langouste-rotie" />
+              <label class="label-product" for="add-langouste-rotie">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Langouste rôtie</span>
+                    <span class="product-subtitle"
+                      >Et ses légumes de saison</span
+                    >
+                  </span>
+                  <span class="product-price">35€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-cote-de-boeuf-angus" />
+              <label class="label-product" for="add-cote-de-boeuf-angus">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Côte de boeuf Angus</span>
+                    <span class="product-subtitle">Et sa purée de panais</span>
+                  </span>
+                  <span class="product-price">44€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <!-- Section Desserts -->
+        <section>
+          <h4>Desserts</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-farandole-de-desserts" />
+              <label class="label-product" for="add-farandole-de-desserts">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Farandole de desserts</span>
+                    <span class="product-subtitle">Du chef</span>
+                  </span>
+                  <span class="product-price">18€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-creme-brulee" />
+              <label class="label-product" for="add-creme-brulee">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Crème brulée</span>
+                    <span class="product-subtitle">Revisitée</span>
+                  </span>
+                  <span class="product-price">22€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-Tiramisu" />
+              <label class="label-product" for="add-Tiramisu">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Tiramisu</span>
+                    <span class="product-subtitle">À la noisette</span>
+                  </span>
+                  <span class="product-price">23€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <button type="button" name="order" class="button-primary">
+          Commander
+        </button>
+      </section>
     </main>
     <footer>
-        <h1>ohmyfood</h1>
-        <nav>
-            <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="mailto:valentinlemaire1618@gmail.com">Contact</a>
-        </nav>
+      <h1>ohmyfood</h1>
+      <nav>
+        <a href="#"
+          ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+        >
+        <a href="#">Mentions légales</a>
+        <a href="mailto:valentinlemaire1618@gmail.com">Contact</a>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>

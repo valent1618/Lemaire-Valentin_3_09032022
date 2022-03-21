@@ -1,194 +1,267 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>ohmyfood - menu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://kit.fontawesome.com/75243ac523.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/75243ac523.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <h1>ohmyfood</h1>
+      <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      <h1>ohmyfood</h1>
     </header>
     <main>
-        <div class="heading-img-menu">
-            <img src="../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant - La note enchantée" class="heading-menu" />
-        </div>
-        <section class="menu">
-            <h2>La note enchantée
-                <span class="heart">
-                    <input type="checkbox" id="fav-la-note-enchantee"/>
-                    <label for="fav-la-note-enchantee">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </label>
+      <div class="heading-img-menu">
+        <img
+          src="../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+          alt="Restaurant - La note enchantée"
+          class="heading-menu"
+        />
+      </div>
+      <section class="menu">
+        <h2>
+          La note enchantée
+          <span class="heart">
+            <input type="checkbox" id="fav-la-note-enchantee" />
+            <label for="fav-la-note-enchantee">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </label>
+          </span>
+        </h2>
+        <!-- Section Entrées -->
+        <section>
+          <h4>Entrées</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-ravioles-de-foie-gras" />
+              <label class="label-product" for="add-ravioles-de-foie-gras">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Ravioles de foie gras</span>
+                    <span class="product-subtitle"
+                      >Accompagnés de leur crème à la truffe</span
+                    >
+                  </span>
+                  <span class="product-price">25€</span>
                 </span>
-            </h2>
-            <!-- Section Entrées -->
-            <section>
-                <h4>Entrées</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-ravioles-de-foie-gras"/>
-                        <label class="label-product" for="add-ravioles-de-foie-gras">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Ravioles de foie gras</span>
-                                    <span class="product-subtitle">Accompagnés de leur crème à la truffe</span>
-                                </span>
-                                <span class="product-price">25€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-caviar-oscietre"/>
-                        <label class="label-product" for="add-caviar-oscietre">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Caviar osciètre</span>
-                                    <span class="product-subtitle">Sur blini à la farine de blé noir</span>
-                                </span>
-                                <span class="product-price">35€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-homard-et-espuma-de-potiron"/>
-                        <label class="label-product" for="add-homard-et-espuma-de-potiron">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Homard et espuma de potiron</span>
-                                    <span class="product-subtitle">Mariné aux zestes d'orange</span>
-                                </span>
-                                <span class="product-price">20€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-foie-gras-de-canard-cuit-entier"/>
-                        <label class="label-product" for="add-foie-gras-de-canard-cuit-entier">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Foie gras de canard cuit entier</span>
-                                    <span class="product-subtitle">Confiture de figue et pain toasté</span>
-                                </span>
-                                <span class="product-price">35€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Plats -->
-            <section>
-                <h4>Plats</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-noix-de-coquilles-saint-jacques"/>
-                        <label class="label-product" for="add-noix-de-coquilles-saint-jacques">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Noix de coquilles Saint-Jacques</span>
-                                    <span class="product-subtitle">Sur lit de purée de céleri-rave</span>
-                                </span>
-                                <span class="product-price">40€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-langoustine-poelee"/>
-                        <label class="label-product" for="add-langoustine-poelee">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Langoustine poêlée</span>
-                                    <span class="product-subtitle">Purée de patate douce</span>
-                                </span>
-                                <span class="product-price">35€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-mijote-de-queue-de-boeuf"/>
-                        <label class="label-product" for="add-mijote-de-queue-de-boeuf">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Mijoté de queue de boeuf</span>
-                                    <span class="product-subtitle">Et riz sauvage aux zestes de citron</span>
-                                </span>
-                                <span class="product-price">44€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Desserts -->
-            <section>
-                <h4>Desserts</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-macaron-noisette-et-chocolat"/>
-                        <label class="label-product" for="add-macaron-noisette-et-chocolat">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Macaron noisette et chocolat</span>
-                                    <span class="product-subtitle">Glace au caramel brun et sel de Guérande</span>
-                                </span>
-                                <span class="product-price">18€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-baba-au-rhum-revisite"/>
-                        <label class="label-product" for="add-baba-au-rhum-revisite">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Baba au rhum revisité</span>
-                                    <span class="product-subtitle">Avec son coulis de citron</span>
-                                </span>
-                                <span class="product-price">22€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-tarte-au-citron-meringuee"/>
-                        <label class="label-product" for="add-tarte-au-citron-meringuee">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Tarte au citron meringuée</span>
-                                    <span class="product-subtitle">Déstructurée</span>
-                                </span>
-                                <span class="product-price">23€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <button type="button" name="order" class="button-primary">Commander</button>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-caviar-oscietre" />
+              <label class="label-product" for="add-caviar-oscietre">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Caviar osciètre</span>
+                    <span class="product-subtitle"
+                      >Sur blini à la farine de blé noir</span
+                    >
+                  </span>
+                  <span class="product-price">35€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-homard-et-espuma-de-potiron" />
+              <label
+                class="label-product"
+                for="add-homard-et-espuma-de-potiron"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Homard et espuma de potiron</span
+                    >
+                    <span class="product-subtitle"
+                      >Mariné aux zestes d'orange</span
+                    >
+                  </span>
+                  <span class="product-price">20€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-foie-gras-de-canard-cuit-entier" />
+              <label
+                class="label-product"
+                for="add-foie-gras-de-canard-cuit-entier"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Foie gras de canard cuit entier</span
+                    >
+                    <span class="product-subtitle"
+                      >Confiture de figue et pain toasté</span
+                    >
+                  </span>
+                  <span class="product-price">35€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
         </section>
+        <!-- Section Plats -->
+        <section>
+          <h4>Plats</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-noix-de-coquilles-saint-jacques" />
+              <label
+                class="label-product"
+                for="add-noix-de-coquilles-saint-jacques"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Noix de coquilles Saint-Jacques</span
+                    >
+                    <span class="product-subtitle"
+                      >Sur lit de purée de céleri-rave</span
+                    >
+                  </span>
+                  <span class="product-price">40€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-langoustine-poelee" />
+              <label class="label-product" for="add-langoustine-poelee">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Langoustine poêlée</span>
+                    <span class="product-subtitle">Purée de patate douce</span>
+                  </span>
+                  <span class="product-price">35€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-mijote-de-queue-de-boeuf" />
+              <label class="label-product" for="add-mijote-de-queue-de-boeuf">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Mijoté de queue de boeuf</span>
+                    <span class="product-subtitle"
+                      >Et riz sauvage aux zestes de citron</span
+                    >
+                  </span>
+                  <span class="product-price">44€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <!-- Section Desserts -->
+        <section>
+          <h4>Desserts</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-macaron-noisette-et-chocolat" />
+              <label
+                class="label-product"
+                for="add-macaron-noisette-et-chocolat"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Macaron noisette et chocolat</span
+                    >
+                    <span class="product-subtitle"
+                      >Glace au caramel brun et sel de Guérande</span
+                    >
+                  </span>
+                  <span class="product-price">18€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-baba-au-rhum-revisite" />
+              <label class="label-product" for="add-baba-au-rhum-revisite">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Baba au rhum revisité</span>
+                    <span class="product-subtitle"
+                      >Avec son coulis de citron</span
+                    >
+                  </span>
+                  <span class="product-price">22€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-tarte-au-citron-meringuee" />
+              <label class="label-product" for="add-tarte-au-citron-meringuee">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Tarte au citron meringuée</span>
+                    <span class="product-subtitle">Déstructurée</span>
+                  </span>
+                  <span class="product-price">23€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <button type="button" name="order" class="button-primary">
+          Commander
+        </button>
+      </section>
     </main>
     <footer>
-        <h1>ohmyfood</h1>
-        <nav>
-            <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="mailto:valentinlemaire1618@gmail.com">Contact</a>
-        </nav>
+      <h1>ohmyfood</h1>
+      <nav>
+        <a href="#"
+          ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+        >
+        <a href="#">Mentions légales</a>
+        <a href="mailto:valentinlemaire1618@gmail.com">Contact</a>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>

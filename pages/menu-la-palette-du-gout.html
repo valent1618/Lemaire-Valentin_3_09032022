@@ -1,181 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>ohmyfood - menu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://kit.fontawesome.com/75243ac523.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/75243ac523.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <h1>ohmyfood</h1>
+      <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      <h1>ohmyfood</h1>
     </header>
     <main>
-        <div class="heading-img-menu">
-            <img src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant - La palette du goût" class="heading-menu" />
-        </div>
-        <section class="menu">
-            <h2>La palette du goût
-                <span class="heart">
-                    <input type="checkbox" id="fav-la-palette-du-gout"/>
-                    <label for="fav-la-palette-du-gout">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </label>
+      <div class="heading-img-menu">
+        <img
+          src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="Restaurant - La palette du goût"
+          class="heading-menu"
+        />
+      </div>
+      <section class="menu">
+        <h2>
+          La palette du goût
+          <span class="heart">
+            <input type="checkbox" id="fav-la-palette-du-gout" />
+            <label for="fav-la-palette-du-gout">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </label>
+          </span>
+        </h2>
+        <!-- Section Entrées -->
+        <section>
+          <h4>Entrées</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-fricassee-descargot" />
+              <label class="label-product" for="add-fricassee-descargot">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Fricassée d'escargot</span>
+                    <span class="product-subtitle">Au piment d'espelette</span>
+                  </span>
+                  <span class="product-price">25€</span>
                 </span>
-            </h2>
-            <!-- Section Entrées -->
-            <section>
-                <h4>Entrées</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-fricassee-descargot"/>
-                        <label class="label-product" for="add-fricassee-descargot">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Fricassée d'escargot</span>
-                                    <span class="product-subtitle">Au piment d'espelette</span>
-                                </span>
-                                <span class="product-price">25€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-foie-gras-de-canard-mi-cuit"/>
-                        <label class="label-product" for="add-foie-gras-de-canard-mi-cuit">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Foie gras de canard mi-cuit</span>
-                                    <span class="product-subtitle">Et ses copeaux de truffe noire</span>
-                                </span>
-                                <span class="product-price">35€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-oeuf-au-plat"/>
-                        <label class="label-product" for="add-oeuf-au-plat">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Oeuf au plat</span>
-                                    <span class="product-subtitle">Assaisonné à la truffe sur lit de caviar</span>
-                                </span>
-                                <span class="product-price">20€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Plats -->
-            <section>
-                <h4>Plats</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-filet-de-boeuf-aux-herbes"/>
-                        <label class="label-product" for="add-filet-de-boeuf-aux-herbes">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Filet de boeuf aux herbes</span>
-                                    <span class="product-subtitle">Accompagné de sa ribambelle de légumes</span>
-                                </span>
-                                <span class="product-price">40€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-parmentier-de-queue-de-boeuf"/>
-                        <label class="label-product" for="add-parmentier-de-queue-de-boeuf">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Parmentier de queue de boeuf</span>
-                                    <span class="product-subtitle">À la truffe noire sur sa purée de panais</span>
-                                </span>
-                                <span class="product-price">35€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-filet-de-turbot"/>
-                        <label class="label-product" for="add-filet-de-turbot">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Filet de turbot</span>
-                                    <span class="product-subtitle">Aux agrumes</span>
-                                </span>
-                                <span class="product-price">44€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Desserts -->
-            <section>
-                <h4>Desserts</h4>
-                <div class="products-container">
-                    <div class="product">
-                        <input type="checkbox" id="add-paris-brest"/>
-                        <label class="label-product" for="add-paris-brest">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Paris-Brest</span>
-                                    <span class="product-subtitle">Revisité</span>
-                                </span>
-                                <span class="product-price">18€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-macaron-au-chocolat-dexception"/>
-                        <label class="label-product" for="add-macaron-au-chocolat-dexception">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Macaron au chocolat d'exception</span>
-                                    <span class="product-subtitle">Et glace à la vanille de Madagascar</span>
-                                </span>
-                                <span class="product-price">22€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                    <div class="product">
-                        <input type="checkbox" id="add-mousse-au-chocolat"/>
-                        <label class="label-product" for="add-mousse-au-chocolat">
-                            <span class="product-body">
-                                <span class="product-name">
-                                    <span class="product-title">Mousse au chocolat</span>
-                                    <span class="product-subtitle">Au piment d'Espelette et à la truffe noire</span>
-                                </span>
-                                <span class="product-price">23€</span>
-                            </span>
-                            <span class="product-validated"><i class="fa-solid fa-circle-check"></i></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <button type="button" name="order" class="button-primary">Commander</button>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-foie-gras-de-canard-mi-cuit" />
+              <label
+                class="label-product"
+                for="add-foie-gras-de-canard-mi-cuit"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Foie gras de canard mi-cuit</span
+                    >
+                    <span class="product-subtitle"
+                      >Et ses copeaux de truffe noire</span
+                    >
+                  </span>
+                  <span class="product-price">35€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-oeuf-au-plat" />
+              <label class="label-product" for="add-oeuf-au-plat">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Oeuf au plat</span>
+                    <span class="product-subtitle"
+                      >Assaisonné à la truffe sur lit de caviar</span
+                    >
+                  </span>
+                  <span class="product-price">20€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
         </section>
+        <!-- Section Plats -->
+        <section>
+          <h4>Plats</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-filet-de-boeuf-aux-herbes" />
+              <label class="label-product" for="add-filet-de-boeuf-aux-herbes">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Filet de boeuf aux herbes</span>
+                    <span class="product-subtitle"
+                      >Accompagné de sa ribambelle de légumes</span
+                    >
+                  </span>
+                  <span class="product-price">40€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-parmentier-de-queue-de-boeuf" />
+              <label
+                class="label-product"
+                for="add-parmentier-de-queue-de-boeuf"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Parmentier de queue de boeuf</span
+                    >
+                    <span class="product-subtitle"
+                      >À la truffe noire sur sa purée de panais</span
+                    >
+                  </span>
+                  <span class="product-price">35€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-filet-de-turbot" />
+              <label class="label-product" for="add-filet-de-turbot">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Filet de turbot</span>
+                    <span class="product-subtitle">Aux agrumes</span>
+                  </span>
+                  <span class="product-price">44€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <!-- Section Desserts -->
+        <section>
+          <h4>Desserts</h4>
+          <div class="products-container">
+            <div class="product">
+              <input type="checkbox" id="add-paris-brest" />
+              <label class="label-product" for="add-paris-brest">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Paris-Brest</span>
+                    <span class="product-subtitle">Revisité</span>
+                  </span>
+                  <span class="product-price">18€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-macaron-au-chocolat-dexception" />
+              <label
+                class="label-product"
+                for="add-macaron-au-chocolat-dexception"
+              >
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title"
+                      >Macaron au chocolat d'exception</span
+                    >
+                    <span class="product-subtitle"
+                      >Et glace à la vanille de Madagascar</span
+                    >
+                  </span>
+                  <span class="product-price">22€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+            <div class="product">
+              <input type="checkbox" id="add-mousse-au-chocolat" />
+              <label class="label-product" for="add-mousse-au-chocolat">
+                <span class="product-body">
+                  <span class="product-name">
+                    <span class="product-title">Mousse au chocolat</span>
+                    <span class="product-subtitle"
+                      >Au piment d'Espelette et à la truffe noire</span
+                    >
+                  </span>
+                  <span class="product-price">23€</span>
+                </span>
+                <span class="product-validated"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <button type="button" name="order" class="button-primary">
+          Commander
+        </button>
+      </section>
     </main>
     <footer>
-        <h1>ohmyfood</h1>
-        <nav>
-            <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="mailto:valentinlemaire1618@gmail.com">Contact</a>
-        </nav>
+      <h1>ohmyfood</h1>
+      <nav>
+        <a href="#"
+          ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+        >
+        <a href="#">Mentions légales</a>
+        <a href="mailto:valentinlemaire1618@gmail.com">Contact</a>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
