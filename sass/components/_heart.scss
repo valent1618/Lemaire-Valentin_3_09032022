@@ -3,6 +3,7 @@
   width: 25px;
   height: 25px;
   font-size: 25px;
+  color: $colour-contrast--darken;
 
   input {
     display: none;
@@ -14,6 +15,7 @@
     background: -webkit-linear-gradient($colour-primary, $colour-secondary);
     background-clip: text;
     -webkit-background-clip: text;
+    padding: 1px;
   }
 
   .fa-solid {

@@ -130,6 +130,7 @@ h1 {
   width: 25px;
   height: 25px;
   font-size: 25px;
+  color: #353535;
 }
 .heart input {
   display: none;
@@ -140,6 +141,7 @@ h1 {
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
+  padding: 1px;
 }
 .heart .fa-solid {
   transform: scale(0);
