@@ -5,6 +5,12 @@
   transition: 0.2s ease;
 }
 
+main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
   color: inherit;

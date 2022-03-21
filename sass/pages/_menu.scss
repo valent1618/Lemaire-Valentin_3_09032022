@@ -11,6 +11,7 @@
 }
 
 .menu {
+  flex-grow: 1;
   border-radius: 40px 40px / 35px 35px 0 0;
   background-color: $colour-bg;
   padding: $padding-section;
