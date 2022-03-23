@@ -1,12 +1,12 @@
 {
-  "name": "p3_lemaire_valentin",
+  "name": "ohmyfood",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "devDependencies": {},
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/styles.css"
   },
-  "author": "",
+  "author": "valent1618",
   "license": "ISC",
   "description": ""
 }
